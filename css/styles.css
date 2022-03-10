@@ -131,11 +131,9 @@ nav{
 /* Here is the hero story */
 
 .hero_image{
-    background-image: url(../images/hero.jpg);
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .hero_story{
@@ -264,7 +262,7 @@ a > i{
 
     .hero_image{
         height: 800px;
-        background-position-y: 40%;
+        object-position: 50% 30%;
     }
 
     .footer_contentbox{
