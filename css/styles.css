@@ -73,11 +73,15 @@ header > a{
     text-decoration: underline;
     padding: 0px 10px;
     color: black;
+    transition: ease-in-out 0.3s;
 }
 
 .nav_li > a:hover{
     color: wheat;
     transition: ease-in-out 0.3s;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: var(--deepblue);
 }
 
 .logo_banner{
