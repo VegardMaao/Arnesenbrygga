@@ -1,0 +1,238 @@
+@import url("variables.css");
+
+/* Global Styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: var(--offwhite);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    font-size: 2rem;
+}
+
+a, p, li{
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+
+main{
+    min-height: calc(100vh - 100px);
+}
+
+/* Header Styles */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid black;
+}
+
+header > a{
+    width: 100px; 
+    display: flex;
+    align-items: center;
+}
+
+.header_logo{
+    height: 100%;
+    background-color: var(--deepblue);
+    width: 75px;
+}
+
+.nav_ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    background-color: var(--offwhite);
+    width: 100%;
+    border-radius: 0px 0px 0px 15px;
+    padding: 0px;
+    align-items: flex-end;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.nav_li{
+    list-style: none;
+    margin: 10px 15px;
+}
+
+.nav_li > a{
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding: 0px 10px;
+    transition: ease-in-out 0.3s;
+}
+
+.nav_li > a:hover{
+    color: wheat;
+    transition: ease-in-out 0.3s;
+}
+
+.logo_banner{
+    display: flex;    
+}
+
+.site_name{
+    font-family: var(--brygga-font);
+    font-size: 1.5rem;
+    margin:auto;
+    padding: 0px 10px;
+}
+
+/* This is the functionality on the hamburger menu */ 
+
+
+nav{
+    display: none;
+    width: 100%;
+}
+
+#hamburger_menu{
+    display: none;
+}
+
+#hamburger_menu:checked ~ nav{
+    display: block;
+    position: absolute;
+    width: 250px;
+    left: calc(100% - 250px);
+    top: 50px;
+    
+}
+
+#menu_icon{
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1.2%;
+    right: 2.5%;
+    padding: 0rem 1rem;
+}
+
+#menu_icon:hover{
+    cursor: pointer;
+    position: absolute;
+}
+
+
+/* Here is the hero story */
+
+.hero_image{
+    background-image: url(../images/hero.jpg);
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+}
+
+.hero_story{
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.cta_btn{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 25px;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-family: var(--header-font);
+    color: var(--offwhite);
+    background-color: var(--deepblue);
+}
+
+/* Here is the secondary story */
+
+.secondaryimg{
+    width: 750px;
+    max-width: 100%;
+    margin: 0px auto;
+    display: block;
+}
+
+/*This is the Footer*/
+footer{
+    height: 50px;
+    border-top: 2px solid black;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--offwhite);
+}
+
+.some{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    align-items: center;
+    background-color: var(--offwhite);
+}
+
+a > i{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    margin: 0px 15px;
+    display: inline;
+}
+
+.about{
+    align-self: flex-end;
+    background-color: var(--offwhite);
+}
+
+/* Had to add the background color to all elements in the footer as the footer div is only 50px, while the  content takes up more space than that. And setting height on the footer to be 100% made the footer way too tall. Adding bg-color to all elements seems to be the way to go here */
+
+.cs_header{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.cs_ul{
+    padding-left: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.cs_li{
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.cs_li > a{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+    .hero_image{
+        height: 800px;
+        background-position-y: 40%;
+    }
+}

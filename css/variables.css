@@ -1,0 +1,20 @@
+/*
+Colors:
+Offwhite =  #F4F3EF
+Lightblue = #77B3D9
+Seablue =   #265DA6
+Deepblue =  #113059
+Navyblue =  #1B1D29
+
+*/
+:root{
+    --offwhite:     #F4F3EF;
+    --lightblue:    #77B3D9;
+    --seablue:      #265DA6;
+    --deepblue:     #113059;
+    --navyblue:     #1B1D29;
+    --brygga-font:  'IM Fell English','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --header-font:  'Alegreya SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --body-font:    'Encode Sans Condensed', 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
