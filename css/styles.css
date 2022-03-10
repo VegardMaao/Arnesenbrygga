@@ -250,7 +250,6 @@ a > i{
         display: block;
         position: absolute;
         top: 50px;
-
     }
 
     .nav_ul{
@@ -258,6 +257,8 @@ a > i{
         border: 2px solid black;
         border-radius: 0px;
         width: 100%;
+        border-left: none;
+        border-right: none;
     }
 
     .hero_image{
