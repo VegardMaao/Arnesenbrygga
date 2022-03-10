@@ -72,7 +72,7 @@ header > a{
     font-size: 1.5rem;
     text-decoration: underline;
     padding: 0px 10px;
-    transition: ease-in-out 0.3s;
+    color: black;
 }
 
 .nav_li > a:hover{
@@ -144,7 +144,9 @@ nav{
     text-align: center;
 }
 
-
+.story_txt{
+    margin: 0px 15px;
+}
 
 .cta_btn{
     border: 2px solid black;
@@ -170,13 +172,18 @@ nav{
 
 /*This is the Footer*/
 footer{
+    background-color: var(--offwhite);
     height: 50px;
     border-top: 2px solid black;
+}
+
+.footer_contentbox{
+    max-width: 900px;
+    margin: 0px 10px;
     padding: 0px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 3fr 1fr;
-    background-color: var(--offwhite);
 }
 
 .some{
@@ -184,13 +191,14 @@ footer{
     flex-direction: row;
     margin-left: 0px;
     align-items: center;
+    justify-content: center;
     background-color: var(--offwhite);
 }
 
 a > i{
     text-decoration: none;
     color: black;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0px 15px;
     display: inline;
 }
@@ -215,24 +223,47 @@ a > i{
 .cs_li{
     list-style: none;
     margin: 5px 0px;
+
 }
 
 .cs_li > a{
     font-size: 0.8rem;
+    font-family: var(--body-font);
 }
-
-
-
-
-
-
 
 
 /* Media Queries */
 
-@media (min-width: 600px) {
+@media (min-width: 910px) {
+
+    .logo_banner{
+        flex: 3;
+    }
+
+    #menu_icon{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .nav_ul{
+        flex-direction: row;
+        border: 2px solid black;
+        border-radius: 0px;
+        width: 100%;
+    }
+
     .hero_image{
         height: 800px;
         background-position-y: 40%;
+    }
+
+    .footer_contentbox{
+        margin: 0px auto;
     }
 }
