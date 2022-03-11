@@ -163,6 +163,12 @@ nav{
     font-family: var(--header-font);
     color: var(--offwhite);
     background-color: var(--deepblue);
+    transition: ease-in-out 0.3s;
+}
+
+.cta_btn:hover{
+    transition: ease-in-out 0.3s;
+    color: wheat;
 }
 
 /* Here is the secondary story */
