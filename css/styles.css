@@ -225,7 +225,8 @@ a > i{
 .cs_li{
     list-style: none;
     margin: 5px 0px;
-
+    font-size: 0.8rem;
+    font-family: var(--body-font);
 }
 
 .cs_li > a{
