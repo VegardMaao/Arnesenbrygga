@@ -26,6 +26,14 @@ main{
     min-height: calc(100vh - 100px);
 }
 
+section{
+    margin: 50px auto;
+}
+
+section:nth-of-type(1){
+    margin-top: 0px;
+}
+
 /* Header Styles */
 
 
@@ -216,6 +224,17 @@ a > i{
 .about{
     align-self: flex-end;
     background-color: var(--offwhite);
+}
+
+/* Tetriary Story */
+
+.tetriarystory{
+    max-width: 750px;
+    margin: 50px auto;
+}
+
+.map{
+    width: 100%;
 }
 
 /* Had to add the background color to all elements in the footer as the footer div is only 50px, while the  content takes up more space than that. And setting height on the footer to be 100% made the footer way too tall. Adding bg-color to all elements seems to be the way to go here */
