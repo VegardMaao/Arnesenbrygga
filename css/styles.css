@@ -14,12 +14,14 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
     font-size: 2rem;
+    color: var(--navyblue);
 }
 
 a, p, li{
     font-family: var(--body-font);
     font-size: 1.2rem; 
     text-align: left;
+    color: var(--navyblue);
 }
 
 main{
@@ -30,7 +32,7 @@ section{
     margin: 50px auto;
 }
 
-article{
+article > p{
     line-height: 1.5;
 }
 
@@ -162,7 +164,7 @@ nav{
 }
 
 .story_txt{
-    margin: 0px 15px;
+    margin: 10px 15px;
 }
 
 .cta_btn{
@@ -305,5 +307,11 @@ a > i{
 
     .footer_contentbox{
         margin: 0px auto;
+    }
+}
+
+@media (max-width:360px) {
+    .site_name{
+        display: none;
     }
 }
