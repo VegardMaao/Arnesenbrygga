@@ -30,6 +30,10 @@ section{
     margin: 50px auto;
 }
 
+article{
+    line-height: 1.5;
+}
+
 section:nth-of-type(1){
     margin-top: 0px;
 }
@@ -81,6 +85,8 @@ header > a{
     font-size: 1.5rem;
     text-decoration: underline;
     padding: 0px 10px;
+    border: 2px solid #00000000;
+    border-radius: 15px;
     color: black;
     transition: ease-in-out 0.3s;
 }
@@ -89,7 +95,6 @@ header > a{
     color: wheat;
     transition: ease-in-out 0.3s;
     border: 2px solid black;
-    border-radius: 15px;
     background-color: var(--deepblue);
 }
 
