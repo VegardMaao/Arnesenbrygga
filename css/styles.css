@@ -42,7 +42,6 @@ section:nth-of-type(1){
 
 /* Header Styles */
 
-
 header{
     display: flex;
     flex-direction: row;
@@ -61,6 +60,10 @@ header > a{
     height: 100%;
     background-color: var(--deepblue);
     width: 75px;
+}
+
+nav{
+    transition: top 0.3s;
 }
 
 .nav_ul{
@@ -114,7 +117,6 @@ header > a{
 
 /* This is the functionality on the hamburger menu */ 
 
-
 nav{
     display: none;
     width: 100%;
@@ -147,6 +149,10 @@ nav{
     cursor: pointer;
     position: absolute;
 }
+
+/* I wanted to have a sticky header on scroll, taking inspiration here:
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
+*/
 
 
 /* Here is the hero story */
@@ -233,22 +239,7 @@ a > i{
     background-color: var(--offwhite);
 }
 
-/* Tetriary Story and other */
 
-.tetriarystory{
-    max-width: 750px;
-    margin: 50px auto;
-}
-
-.map{
-    width: 100%;
-}
-
-.terms_calendar{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
 
 /* Had to add the background color to all elements in the footer as the footer div is only 50px, while the  content takes up more space than that. And setting height on the footer to be 100% made the footer way too tall. Adding bg-color to all elements seems to be the way to go here */
 
@@ -272,6 +263,23 @@ a > i{
 .cs_li > a{
     font-size: 0.9rem;
     font-family: var(--body-font);
+}
+
+/* Tetriary Story and other */
+
+.tetriarystory{
+    max-width: 750px;
+    margin: 50px auto;
+}
+
+.map{
+    width: 100%;
+}
+
+.terms_calendar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 
