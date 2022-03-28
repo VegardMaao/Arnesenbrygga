@@ -233,7 +233,7 @@ a > i{
     background-color: var(--offwhite);
 }
 
-/* Tetriary Story */
+/* Tetriary Story and other */
 
 .tetriarystory{
     max-width: 750px;
@@ -242,6 +242,12 @@ a > i{
 
 .map{
     width: 100%;
+}
+
+.terms_calendar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 /* Had to add the background color to all elements in the footer as the footer div is only 50px, while the  content takes up more space than that. And setting height on the footer to be 100% made the footer way too tall. Adding bg-color to all elements seems to be the way to go here */
