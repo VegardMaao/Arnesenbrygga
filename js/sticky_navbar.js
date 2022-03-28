@@ -1,6 +1,8 @@
 // I wanted to have a sticky header on scroll, taking inspiration here:
 // https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
 
+let width = window.screen.width;
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
@@ -16,6 +18,10 @@ window.onscroll = function() {
     document.getElementById("navbar").style.position = "absolute";
     document.getElementById("navbar").style.top = "";
   }
+  if (width <= 910){
+    console.log("log");
+    document.getElementById("navbar").style.position = "absolute";
+    document.getElementById("navbar").style.top = "";
+  }
 }
-
 
