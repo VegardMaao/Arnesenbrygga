@@ -1,27 +1,32 @@
 // I wanted to have a sticky header on scroll, taking inspiration here:
 // https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
+// https://stackoverflow.com/questions/56071897/hide-when-scroll-down-appears-when-scroll-up
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset
+
+const navbar = document.getElementById("navbar")
 
 let width = window.screen.width;
 
-let prevScrollpos = window.pageYOffset;
+let scrollDown = window.pageYOffset;
 window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.position = "fixed";
-    document.getElementById("navbar").style.top = "0";
+  let noScroll = window.pageYOffset;
+  if (scrollDown > noScroll) {
+    navbar.style.position = "fixed";
+    navbar.style.top = "0";
   } else {
-    document.getElementById("navbar").style.position = "fixed";
-    document.getElementById("navbar").style.top = "-60px";
+    navbar.style.position = "fixed";
+    navbar.style.top = "-60px";
   }
-  prevScrollpos = currentScrollPos;
+  scrollDown = noScroll;
   if (window.scrollY === 0){
-    document.getElementById("navbar").style.position = "absolute";
-    document.getElementById("navbar").style.top = "";
+    navbar.style.position = "absolute";
+    navbar.style.top = "";
   }
   if (width <= 910){
-    console.log("log");
-    document.getElementById("navbar").style.position = "absolute";
-    document.getElementById("navbar").style.top = "";
+    navbar.style.position = "absolute";
+    navbar.style.top = "";
   }
 }
 
+// I also want the menu button on mobile to work like this, but it seems a little trickier. 
+// I'll look into that if there's time for that. 
