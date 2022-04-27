@@ -9,6 +9,7 @@ document.getElementById('footer_dom').innerHTML = '<div class="footer_contentbox
 
 //After playing around, I found that the header must be inserted before the navbar-script runs, or else it won't apply to the header.
 
+
 // I wanted to have a sticky header on scroll, taking inspiration here:
 // https://www.w3schools.com/howto/howto_js_navbar_sticky.asp 
 // https://stackoverflow.com/questions/56071897/hide-when-scroll-down-appears-when-scroll-up
@@ -33,7 +34,7 @@ window.onscroll = function() {
     navbar.style.position = "absolute";
     navbar.style.top = "";
   }
-  if (width <= 910){
+  if (width <= 930){
     navbar.style.position = "absolute";
     navbar.style.top = "";
   }
