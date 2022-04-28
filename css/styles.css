@@ -62,6 +62,11 @@ header > a{
     width: 75px;
 }
 
+.block{
+    height: 100%;
+    width: 100px;
+}
+
 nav{
     transition: top 0.3s;
 }
@@ -104,7 +109,9 @@ nav{
 }
 
 .logo_banner{
-    display: flex;    
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 120fr 1fr;    
 }
 
 .site_name{
@@ -286,10 +293,6 @@ a > i{
 /* Media Queries */
 
 @media (min-width: 910px) {
-
-    .logo_banner{
-        flex: 3;
-    }
 
     .header_logo{
         width: 100px;
