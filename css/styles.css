@@ -62,11 +62,6 @@ header > a{
     width: 75px;
 }
 
-.block{
-    height: 100%;
-    width: 100px;
-}
-
 nav{
     transition: top 0.3s;
     display: none;
@@ -113,7 +108,7 @@ nav{
 .logo_banner{
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 120fr 1fr;    
+    grid-template-columns: 1fr 1fr 1fr;    
 }
 
 .site_name{
@@ -289,7 +284,7 @@ a > i{
 
 /* Media Queries */
 
-@media (min-width: 910px) {
+@media (min-width: 930px) {
 
     .header_logo{
         width: 100px;
@@ -324,7 +319,7 @@ a > i{
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:370px) {
     .site_name{
         display: none;
     }
