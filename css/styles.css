@@ -69,6 +69,8 @@ header > a{
 
 nav{
     transition: top 0.3s;
+    display: none;
+    width: 100%;
 }
 
 .nav_ul{
@@ -123,11 +125,6 @@ nav{
 }
 
 /* This is the functionality on the hamburger menu */ 
-
-nav{
-    display: none;
-    width: 100%;
-}
 
 #hamburger_menu{
     display: none;
