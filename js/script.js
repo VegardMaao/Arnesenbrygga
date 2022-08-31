@@ -26,7 +26,7 @@ document.getElementById('header_dom').innerHTML = `
 <li class="nav_li"><a href=${navURLs.boatsAndFishing}>${navItems.boatsAndFishing}</a></li>
 <li class="nav_li"><a href=${navURLs.parties}>${navItems.parties}</a></li>
 <li class="nav_li"><a href=${navURLs.teamBuilding}>${navItems.teamBuilding}</a></li>
-<li class="nav_li"><a href=${navURLs.booking}">${navItems.booking}</a></li>
+<li class="nav_li"><a href=${navURLs.booking}>${navItems.booking}</a></li>
 </ul>
 </nav>
 `;

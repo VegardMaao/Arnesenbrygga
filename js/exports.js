@@ -12,7 +12,7 @@ export const navItems = {
     boatsAndFishing: "Båt og Fiske",
     parties: "Selskapslokale",
     teamBuilding: "Teambuilding",
-    booking: "Booking"
+    booking: "Booking",
 };
 
 export const navURLs = {
@@ -21,7 +21,7 @@ export const navURLs = {
     boatsAndFishing: "baatogfiske.html",
     parties: "selskapslokale.html",
     teamBuilding: "teambuilding.html",
-    booking: "booking.html"
+    booking: "booking.html",
 }
 
 export const footerItems = {
