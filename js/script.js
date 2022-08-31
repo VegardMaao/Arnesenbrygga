@@ -37,7 +37,7 @@ document.getElementById('footer_dom').innerHTML = `
 <li class="cs_li"><a href="${footerItems.footerInfo.aboutURL}">${footerItems.footerInfo.about}</a></li>
 <li class="cs_li"><a href="${footerItems.footerInfo.activitiesURL}">${footerItems.footerInfo.activities}</a></li>
 <li class="cs_li">${footerItems.footerInfo.email}:<a href="mailto:${footerItems.footerInfo.emailURL}">${footerItems.footerInfo.emailURL}</a></li></ul></div>
-<div class="some"><a class="some_icon" href=${footerItems.footerSome.someURL} title=${footerItems.footerSome.someTitle}><i class="fab fa-instagram-square"></i></a>
+<div class="some"><a class="some_icon" href=${footerItems.footerSome.someURL} title=${footerItems.footerSome.someTitle} target="blank"><i class="fab fa-instagram-square"></i></a>
 </div></div>`;
 
 //After playing around, I found that the header must be inserted before the navbar-script runs, or else it won't apply to the header.
