@@ -12,7 +12,10 @@ import {navItems} from "./exports.js";
 import {navURLs} from "./exports.js";
 import {footerItems} from "./exports.js";
 
-document.getElementById('header_dom').innerHTML = `
+const headerDOM = document.getElementById('header_dom');
+const footerDOM = document.getElementById('footer_dom');
+
+headerDOM.innerHTML = `
 <div class="logo_banner">
 <a href=${navURLs.home}><img src=${headerBanner.logoImage} alt="Arnesenbrygga Logo"class="header_logo"/></a>
 <p class="site_name">ARNESENBRYGGA</p><div class="block"></div></div>
@@ -31,7 +34,8 @@ document.getElementById('header_dom').innerHTML = `
 </nav>
 `;
 
-document.getElementById('footer_dom').innerHTML = `
+
+footerDOM.innerHTML = `
 <div class="footer_contentbox">
 <div class="about"><h2 class="cs_header">${footerItems.footerHeading}</h2><ul class="cs_ul">
 <li class="cs_li"><a href="${footerItems.footerInfo.aboutURL}">${footerItems.footerInfo.about}</a></li>
