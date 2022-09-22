@@ -2,8 +2,7 @@
 
 export const headerBanner = {
     logoImage: "images/brygga_logo_alt_inverted.png",
-}
-
+};
 
 export const navItems = {
     home: "Hjem",
@@ -21,7 +20,7 @@ export const navURLs = {
     parties: "selskapslokale.html",
     teamBuilding: "teambuilding.html",
     booking: "booking.html",
-}
+};
 
 export const footerItems = {
     footerHeading: "Om Oss:",
@@ -37,4 +36,4 @@ export const footerItems = {
         someTitle: "instagram",
         someURL: "https://www.instagram.com",
     }
-}
+};
