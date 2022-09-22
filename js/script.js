@@ -7,7 +7,7 @@
 //Below is my old setup for  the header. Everyting in one line, which is pretty un-okay. I've made  this neater using string template literals
 // document.getElementById('header_dom').innerHTML = '<div class="logo_banner"><a href="index.html"><img src="images/brygga_logo_alt_inverted.PNG.png"alt="Arnesenbrygga Logo"class="header_logo"/></a><p class="site_name">ARNESENBRYGGA</p><div class="block"></div></div><label for="hamburger_menu" class="menubox"><i class="fas fa-bars" id="menu_icon"></i></label><input type="checkbox" name="hamburger_menu" id="hamburger_menu" /><nav id="navbar"><ul class="nav_ul"><li class="nav_li"><a href="index.html">Hjem</a></li><li class="nav_li"><a href="rorbua.html">Om Rorbua</a></li><li class="nav_li"><a href="baatogfiske.html">Båt og Fiske</a></li><li class="nav_li"><a href="selskapslokale.html">Selskapslokale</a></li><li class="nav_li"><a href="teambuilding.html">Teambuilding</a></li><li class="nav_li"><a href="booking.html">Booking</a></li></ul></nav>';
 
-import { headerBanner } from "./exports.js";
+import {headerBanner} from "./exports.js";
 import {navItems} from "./exports.js";
 import {navURLs} from "./exports.js";
 import {footerItems} from "./exports.js";

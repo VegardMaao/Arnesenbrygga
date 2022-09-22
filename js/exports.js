@@ -2,7 +2,6 @@
 
 export const headerBanner = {
     logoImage: "images/brygga_logo_alt_inverted.png",
-
 }
 
 
