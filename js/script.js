@@ -73,7 +73,7 @@ window.onscroll = function() {
     navbar.style.position = "absolute";
     navbar.style.top = "";
   }
-}
+};
 
 // I also want the menu button on mobile to work like this, but it seems a little trickier. 
 // I'll look into that if there's time for that. 
