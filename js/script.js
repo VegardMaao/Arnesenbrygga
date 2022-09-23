@@ -9,7 +9,6 @@
 
 import {headerBanner} from "./exports.js";
 import {navItems} from "./exports.js";
-import {navURLs} from "./exports.js";
 import {footerItems} from "./exports.js";
 
 const headerDOM = document.getElementById('header_dom');
@@ -17,23 +16,22 @@ const footerDOM = document.getElementById('footer_dom');
 
 headerDOM.innerHTML = `
 <div class="logo_banner">
-<a href=${navURLs.home}><img src=${headerBanner.logoImage} alt="Arnesenbrygga Logo"class="header_logo"/></a>
+<a href=${navItems[0].url}><img src=${headerBanner.logoImage} alt="Arnesenbrygga Logo"class="header_logo"/></a>
 <p class="site_name">ARNESENBRYGGA</p><div class="block"></div></div>
 <label for="hamburger_menu" class="menubox"><i class="fas fa-bars" id="menu_icon"></i></label>
 <input type="checkbox" name="hamburger_menu" id="hamburger_menu"/>
 
 <nav id="navbar">
 <ul class="nav_ul">
-<li class="nav_li"><a href=${navURLs.home}>${navItems.home}</a></li>
-<li class="nav_li"><a href=${navURLs.about}>${navItems.about}</a></li>
-<li class="nav_li"><a href=${navURLs.boatsAndFishing}>${navItems.boatsAndFishing}</a></li>
-<li class="nav_li"><a href=${navURLs.parties}>${navItems.parties}</a></li>
-<li class="nav_li"><a href=${navURLs.teamBuilding}>${navItems.teamBuilding}</a></li>
-<li class="nav_li"><a href=${navURLs.booking}>${navItems.booking}</a></li>
 </ul>
 </nav>
 `;
 
+let navigationUl = headerDOM.querySelector(".nav_ul");
+
+for (let navItem of navItems) {
+  navigationUl.innerHTML += `<li class="nav_li"><a href=${navItem.url}>${navItem.name}</a></li>`;
+};
 
 footerDOM.innerHTML = `
 <div class="footer_contentbox">

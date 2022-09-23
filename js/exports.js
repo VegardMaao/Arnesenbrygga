@@ -4,23 +4,31 @@ export const headerBanner = {
     logoImage: "images/brygga_logo_alt_inverted.png",
 };
 
-export const navItems = {
-    home: "Hjem",
-    about: "Om Rorbua",
-    boatsAndFishing: "Båt og Fiske",
-    parties: "Selskapslokale",
-    teamBuilding: "Teambuilding",
-    booking: "Booking",
-};
-
-export const navURLs = {
-    home: "index.html",
-    about: "rorbua.html",
-    boatsAndFishing: "baatogfiske.html",
-    parties: "selskapslokale.html",
-    teamBuilding: "teambuilding.html",
-    booking: "booking.html",
-};
+export const navItems = [{
+    name: "Hjem",
+    url: "index.html",
+    index: 0
+}, {
+    name: "Om oss",
+    url: "rorbua.html",
+    index: 1,
+}, {
+    name: "Båt og Fiske",
+    url: "baatogfiske.html",
+    index: 2,
+}, {
+    name: "Selskapslokale",
+    url: "selskapslokale.html",
+    index: 3,
+}, {
+    name: "Teambuilding",
+    url: "teambuilding.html",
+    index: 4,
+}, {
+    name: "Booking",
+    url: "booking.html",
+    index: 5,
+}];
 
 export const footerItems = {
     footerHeading: "Om Oss:",
