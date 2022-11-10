@@ -36,7 +36,7 @@ export const footerItems = {
         about: "Om oss",
         aboutURL: "aboutus.html",
         activities: "Aktiviteter i Kr.Sund",
-        activitiesURL: "krisiansund.html",
+        activitiesURL: "kristiansund.html",
         email: "Epost",
         emailURL: "post@arnesenbrygga.no"
     },
