@@ -38,7 +38,7 @@ footerDOM.innerHTML = `
 <div class="about"><h2 class="cs_header">${footerItems.footerHeading}</h2><ul class="cs_ul">
 <li class="cs_li"><a href="${footerItems.footerInfo.aboutURL}">${footerItems.footerInfo.about}</a></li>
 <li class="cs_li"><a href="${footerItems.footerInfo.activitiesURL}">${footerItems.footerInfo.activities}</a></li>
-<li class="cs_li">${footerItems.footerInfo.email}:<a href="mailto:${footerItems.footerInfo.emailURL}">${footerItems.footerInfo.emailURL}</a></li></ul></div>
+<li class="cs_li">${footerItems.footerInfo.email}: <a href="mailto:${footerItems.footerInfo.emailURL}">${footerItems.footerInfo.emailURL}</a></li></ul></div>
 <div class="some"><a class="some_icon" href=${footerItems.footerSome.someURL} title=${footerItems.footerSome.someTitle} target="blank"><i class="fab fa-instagram-square"></i></a>
 </div></div>`;
 
