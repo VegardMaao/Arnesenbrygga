@@ -10,3 +10,7 @@ Det kan forresten være lurt å lagre de gamle vilkårs-dokumentene eksternt
 dersom disse skal endres på. På den måten har vi en oversikt over 
 vilkårene over tid, i tifellle det skulle oppstå noen spørsmål.
 -Vegard 
+
+
+---------------------------
+Notat, SEO. Jeg bør optimalisere mot SEO, slik at når folk googler "Kristiansund" kommer Arnesenbrygga opp 
